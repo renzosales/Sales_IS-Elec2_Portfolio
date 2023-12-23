@@ -1,32 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Renzo Sales - Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio Website - Sales, Renzo</title>
 </head>
 <body>
-    <header>
-        <h1>Renzo Sales</h1>
-        <p>Student &amp; Developer</p>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Renzo</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
     </header>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Portfolio lvl 01</h3>
-            <p>this project is the sample of our first attempt in learning html and css</p>
-            <a href="index.html">View Project</a>
-        </div>
 
-        <div class="project">
-            <h3>Project 404</h3>
-            <p>unknown</p>
-            <a href="https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-1.png.webp">View Project</a>
-        </div>
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">RENZO</span><br>Animation Student</h1>
 
-        <!-- Add your project details here -->
-    </section>
-    <footer>
-        <p>&copy; 2023 Renzo Sales</p>
+                <a href="#about" class="button">About Me</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.facebook.com/salesrenzo/" class="home__social-icon"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/en.zoooooo" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="" class="home__social-icon"><i class='bx bxl-google' ></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        <image class="home__blob-img" x="50" y="60" href="me.png"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="me2.jpg" alt="">
+                </div>
+                    
+                <div>
+                    <h2 class="about__subtitle">I'm Renzo Mari O. Sales</h2>
+                    <p class="about__text">Hello! 👋 I'm currently an animation student at Bicol University, Polangui. <br><br> I am dedicated to honing my skills and crafting mesmerizing visual tales that resonate. Join me as I embark on this animated adventure, aiming to have my works recognized and appreciated by audiences far and wide.
+
+                    <br><br>
+
+                    Let's bring imagination to life, one frame at a time! 🎨🚀
+                    </p>      
+                </div>                                   
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">          
+                <div>
+                    <h2 class="skills__subtitle">Learned Skills</h2>
+                    <p class="skills__text">Still learning and open for improvement.</p>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class=' skills__icon'></i>
+                            <span class="skills__name">Photoshop</span>
+                        </div>
+                        <div class="skills__bar skills__ps">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">45%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class=' skills__icon'></i>
+                            <span class="skills__name">Premier</span>
+                        </div>
+                        <div class="skills__bar skills__pr">
+                                
+                        </div>
+                        <div>
+                            <span class="skills__percentage">60%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class=' skills__icon' ></i>
+                            <span class="skills__name">Photography</span>
+                        </div>
+                        <div class="skills__bar skills__photo">
+                                
+                        </div>
+                        <div>
+                            <span class="skills__percentage">50%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class=' skills__icon'></i>
+                            <span class="skills__name">Blender 3D</span>
+                        </div>
+                        <div class="skills__bar skills__bl">
+                            
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>              
+                    <img src="work3.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+
+            <div class="work__container bd-grid">
+                <a href="" class="work__img">
+                    <img src="img2.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="img4.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="img6.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="apple6.png" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="level4.png" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="rice.jpg" alt="">
+                </a>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Send" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">SALES, RENZO MARI O.</p>
+        <div class="footer__social">
+            <a href="https://www.facebook.com/salesrenzo" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/en.zoooooo" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-google' ></i></a>
+        </div>
+        <p class="footer__copy">&#169; All rights reserved</p>
     </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="script.js"></script>
 </body>
 </html>
